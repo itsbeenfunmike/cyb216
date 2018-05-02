@@ -1,7 +1,7 @@
 #place file 1 on here. 
-file1name = 'file1.txt'
+file1name = 'maclist'
 #add file 2 on here.
-file2name = 'file2.txt'
+file2name = 'knownGoodMacs'
 
 #this will open those files.
 file1 = open(file1name, 'r')
