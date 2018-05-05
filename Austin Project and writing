@@ -1,0 +1,25 @@
+#Austin Part Project
+
+#The first thing that was needed was to create a file with the “.py” format so it can be read in python. When that is completed it was time to begin researching and writing the code itself. The first part is was writing def which is the start to building a function( Lien, 2018, pp. 1). After establishing the function we imported “subprocess” which “allows you to spawn processes ”(Python, 2018, pp.1). Then we create a variable that calls upon or crates a document and adds writing privileges to it. Then we use the the subprocess Popen which calls upon a subprocess and is usable with the stdout call (Python, 2018, pp. 3). We use the arp -a command which is a common bash command that list all of the Mac address on the network. 
+
+
+
+def stepone():
+
+    import subprocess
+    
+    f = open('arptable', 'w+')
+    
+    subprocess.Popen(["arp", "-a"], stdout = f)
+    
+stepone()
+
+
+
+
+
+
+
+#Lien, B. (2018) Functions, Python 2 Tutorial. Retrieved from https://www.python-course.eu/functions.php
+
+#Python Standard (2018) Subprocess Management. The Python Standard Library. Retrieved from https://docs.python.org/2/library/subprocess.html
